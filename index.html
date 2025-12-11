@@ -17,10 +17,18 @@
                 <li>About</li>
                 <li>blog</li>
             </ul>
+            <h1>Hello World</h1>
+            <ul>
+                <li>dom</li>
+                <li>contact</li>
+                <li>group</li>
+            </ul>
         </main>
-        <script src="js/dom.js"></script>
-        <script>
-            console.log(document);
+        <script src="js/dom.js">
+                        const allHeading = document.getElementsByTagName("h1");
+            for (const h1 of allHeading) {
+                console.log(h1.innerText);
+            }
         </script>
     </body>
 </html>
