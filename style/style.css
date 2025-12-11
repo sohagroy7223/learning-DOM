@@ -4,3 +4,9 @@ h1 {
 li {
     color: blue;
 }
+#place-title {
+    background: rgb(34, 34, 96);
+}
+.imp-place {
+    color: brown;
+}

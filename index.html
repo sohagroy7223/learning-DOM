@@ -8,27 +8,47 @@
     </head>
     <body>
         <header>
-            <h1>welcome come to my learning proses dom</h1>
-        </header>
-        <main>
-            <h1>welcome to dom</h1>
+            <h1 id="welcome">welcome come to my learning proses dom</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias vitae ipsum autem. Dignissimos, error quos! Pariatur
+                hic quas aliquid obcaecati?
+            </p>
             <ul>
                 <li>Home</li>
                 <li>About</li>
                 <li>blog</li>
             </ul>
-            <h1>Hello World</h1>
-            <ul>
-                <li>dom</li>
-                <li>contact</li>
-                <li>group</li>
-            </ul>
+        </header>
+        <main>
+            <section>
+                <h1 id="place-title">I want to visit this place</h1>
+                <ul>
+                    <li class="imp-place">Soondarban</li>
+                    <li class="imp-place">Bandorban</li>
+                    <li class="imp-place">chandranath</li>
+                    <li>cox's bazer</li>
+                </ul>
+            </section>
         </main>
-        <script src="js/dom.js">
-                        const allHeading = document.getElementsByTagName("h1");
+        <script src="js/dom.js"></script>
+        <script>
+            console.log(document);
+            console.log("hello from js");
+            const liCollection = document.getElementsByTagName("li");
+            for (const li of liCollection) {
+                console.log(li.innerText);
+            }
+            const allHeading = document.getElementsByTagName("h1");
             for (const h1 of allHeading) {
                 console.log(h1.innerText);
             }
+            const places = document.getElementsByClassName("imp-place");
+            for (const place of places) {
+                console.log(place.innerText);
+            }
+            const welcome = document.getElementById("welcome");
+            welcome.innerText = "welcome to my webside";
         </script>
     </body>
 </html>
