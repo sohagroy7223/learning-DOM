@@ -1,5 +1,5 @@
 h1 {
-    color: brown;
+    color: rgb(242, 227, 227);
 }
 li {
     color: blue;
@@ -9,4 +9,7 @@ li {
 }
 .imp-place {
     color: brown;
+}
+.place-container li {
+    color: rgb(8, 215, 215);
 }

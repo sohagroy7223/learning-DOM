@@ -21,7 +21,7 @@
             </ul>
         </header>
         <main>
-            <section>
+            <section class="place-container">
                 <h1 id="place-title">I want to visit this place</h1>
                 <ul>
                     <li class="imp-place">Soondarban</li>
@@ -33,22 +33,35 @@
         </main>
         <script src="js/dom.js"></script>
         <script>
-            console.log(document);
-            console.log("hello from js");
+            // option 1: getElementsByTagName
             const liCollection = document.getElementsByTagName("li");
             for (const li of liCollection) {
                 console.log(li.innerText);
             }
+
+            // option  1 and it's same
             const allHeading = document.getElementsByTagName("h1");
             for (const h1 of allHeading) {
                 console.log(h1.innerText);
             }
+
+            // option 2: getElementsByClassName
             const places = document.getElementsByClassName("imp-place");
             for (const place of places) {
                 console.log(place.innerText);
             }
+
+            // option 3: getElementById
             const welcome = document.getElementById("welcome");
-            welcome.innerText = "welcome to my webside";
+            welcome.innerText = "welcome to my website";
+
+            // option 4: querySelector
+            // it will return the 1st one
+            // option 5: querySelectorLL
+            const someLi = document.querySelectorAll(".place-container li");
+            for (const li of someLi) {
+                console.log(li.innerText);
+            }
         </script>
     </body>
 </html>
