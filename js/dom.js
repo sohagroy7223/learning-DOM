@@ -6,3 +6,8 @@ for(const section of sections){
     section.style.borderRadius= "20px"
     section.style.background = "lightgray"
 }
+const places = document.getElementsByClassName("place-container")
+for(const place of places){
+    place.style.textAlign = "center"
+    place.style.fontSize = "1.5rem"
+}

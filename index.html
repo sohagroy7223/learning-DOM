@@ -44,7 +44,9 @@
                 </ul>
             </section>
         </main>
-        <script src="js/dom.js"></script>
+        <script src="js/dom.js">
+            
+        </script>
         <script>
             // option 1: getElementsByTagName
             const liCollection = document.getElementsByTagName("li");
@@ -71,15 +73,11 @@
             // option 4: querySelector
             // it will return the 1st one
             // option 5: querySelectorLL
-            const someLi = document.querySelectorAll(".place-container li");
-            for (const li of someLi) {
+            // const someLi = document.querySelectorAll(".place-container li");
+            // for (const li of someLi) {
                 // console.log(li.innerText);
-            }
-            const titles =
-                document.getElementsByClassName("fruits-container")[0];
-            titles.innerHTML =
-                "<h1>Wow dom is change by fruits container </h1> <li>mango </li><li>papaya </li><li>pineapple </li>";
-
+            // }
+            
             const checks= document.querySelector(".fruits-container li")
             
                 // console.log(checks.innerText)
