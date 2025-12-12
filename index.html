@@ -21,8 +21,19 @@
             </ul>
         </header>
         <main>
+            <section class="fruits-container">
+                <h1>I like this fruits for eat</h1>
+                <ul>
+                    <li>apple</li>
+                    <li>orange</li>
+                    <li>jackfruit</li>
+                    <li>banana</li>
+                </ul>
+            </section>
             <section class="place-container">
-                <h1 id="place-title">I want to visit this place</h1>
+                <h1 id="place-title" class="visit-place place hobe">
+                    I want to visit this place
+                </h1>
                 <ul>
                     <li class="imp-place">Soondarban</li>
                     <li class="imp-place">Bandorban</li>
@@ -62,6 +73,10 @@
             for (const li of someLi) {
                 console.log(li.innerText);
             }
+            const titles =
+                document.getElementsByClassName("fruits-container")[0];
+            titles.innerHTML =
+                "<h1>Wow dom is change by fruits container </h1> <li>sohag </li><li>sagor </li><li>sumon </li>";
         </script>
     </body>
 </html>
