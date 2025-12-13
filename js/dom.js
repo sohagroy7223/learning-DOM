@@ -11,3 +11,9 @@ for(const place of places){
     place.style.textAlign = "center"
     place.style.fontSize = "1.5rem"
 }
+
+
+const nav = document.getElementById("nav-container");
+nav.classList.add("home-page")
+nav.classList.remove("home-page")
+nav.firstChild

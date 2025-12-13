@@ -13,3 +13,7 @@ li {
 .place-container li {
     color: rgb(8, 215, 215);
 }
+.home-page{
+    text-align: justify;
+    padding: 30px;
+}
