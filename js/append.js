@@ -19,6 +19,7 @@ const h1 = document.createElement("h1");
 h1.innerText="My food item";
 section.appendChild(h1);
 
+// this value set by innerText
 
 const ul = document.createElement("ul")
 section.appendChild(ul)
@@ -39,3 +40,18 @@ li4.innerText = "doi"
 ul.appendChild(li4)
 
 mainContainer.appendChild(section);
+
+
+// this value set by innerHTML directly
+
+const sectionDress = document.createElement("section");
+sectionDress.innerHTML=`
+<h1> my dress section</h1>
+<ul>
+<li>T-Shirt </li>
+<li>T-payjama </li>
+<li>T-longi </li>
+<li>T-sendo gangy </li>
+</ul>
+`
+mainContainer.appendChild(sectionDress)
