@@ -36,7 +36,7 @@
                 <h1 id="place-title" class="visit-place place hobe">
                     I want to visit this place
                 </h1>
-                <ul>
+                <ul id="place-list">
                     <li class="imp-place">Soondarban</li>
                     <li class="imp-place">Bandorban</li>
                     <li class="imp-place">chandranath</li>
@@ -58,6 +58,7 @@
         <script src="js/dom.js">
             
         </script>
+        <script src="js/append.js"></script>
         <script>
             // option 1: getElementsByTagName
             const liCollection = document.getElementsByTagName("li");
@@ -68,7 +69,7 @@
             // option  1 and it's same
             const allHeading = document.getElementsByTagName("h1");
             for (const h1 of allHeading) {
-                // console.log(h1.innerText);
+                console.log(h1.innerText);
             }
 
             // option 2: getElementsByClassName
