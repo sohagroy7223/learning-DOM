@@ -42,7 +42,7 @@ ul.appendChild(li4)
 mainContainer.appendChild(section);
 
 
-// this value set by innerHTML directly
+//  set innerHTML directly
 
 const sectionDress = document.createElement("section");
 sectionDress.innerHTML=`
